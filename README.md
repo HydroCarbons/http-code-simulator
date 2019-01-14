@@ -1,7 +1,7 @@
 # http-code-simulator
 
 ## Travis CI Status
-[![Build Status](https://travis-ci.com/HydroCarbons/secure-json.svg?branch=master)](https://travis-ci.com/HydroCarbons/http-code-simulator)
+[![Build Status](https://travis-ci.com/HydroCarbons/http-code-simulator.svg?branch=master)](https://travis-ci.com/HydroCarbons/http-code-simulator)
 [![Coverage Status](https://coveralls.io/repos/github/HydroCarbons/http-code-simulator/badge.svg?branch=master)](https://coveralls.io/github/HydroCarbons/http-code-simulator?branch=master)
 
 # http-code-simulator
