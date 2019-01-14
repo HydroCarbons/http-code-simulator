@@ -1,10 +1,10 @@
 {
   "name": "http-code-simulator",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "HTTP Code Simulator is a HTTP response code simulator server. One can test various HTTP response codes from the server on the client side using this simulator",
   "main": "./src/index.js",
   "scripts": {
-    "start": "node ./src/index.js",
+    "start": "node ./src/index.js --startServer",
     "test": "node ./test/test.js"
   },
   "keywords": [

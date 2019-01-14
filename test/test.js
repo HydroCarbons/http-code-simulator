@@ -80,6 +80,10 @@ function sendRequest(HTTPCode, simulateServerDelay) {
 }
 ////////////////////////////////////////////////////////////////////////////////
 async function tests() {
+
+  var server = require("../src/index.js");
+  server.start();
+
   var start_time = Date.now(), end_time;
 
   var testCaseNo = 1;
@@ -113,6 +117,7 @@ async function tests() {
   end_time = Date.now();
   console.log("[Status] Total time taken : ", Math.floor( (end_time-start_time)/1000) + " seconds" );
 
+  server.stop();
 }
 ////////////////////////////////////////////////////////////////////////////////
 

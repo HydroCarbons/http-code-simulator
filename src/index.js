@@ -103,6 +103,23 @@ function statusHandler(req, res, next) {
 app.get('/status/*', statusHandler);
 app.get('/help', helpHandler);
 
-console.log("Server listening on : " + HOST_PORT);
-app.listen(HOST_PORT);
+function startServer() {
+  app.listen(HOST_PORT);
+}
+
+function stopServer() {
+  process.exit(0);
+}
+
+// StartServer
+process.argv.forEach(function (val, index, array) {
+  //console.log(index + ': ' + val);
+  if(2==index && val==='--startServer' ) {
+    startServer();
+    console.log("Server listening on : " + HOST_PORT);
+  }
+});
+
 ////////////////////////////////////////////////////////////////////////////////
+module.exports.start = startServer;
+module.exports.stop = stopServer;
