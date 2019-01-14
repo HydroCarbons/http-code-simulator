@@ -11,13 +11,18 @@
 1. Clone this repository http-code-simulator
 1. Switch to folder http-code-simulator
 1. Install dependencies: ` npm install `
-1. Simulator will be running on ` <localhost>:<9090> `
+1. Start the server: ` npm start `  Or ` node ./src/index.js --startServer `
+1. Simulator will be running @ ` <localhost>:<9090> `
 
 ## Usage (client side)
 1. Send client HTTP requests (any HTTP Method) to ` <localhost>:<9090>/status/<HTTPCode> `
 1. Simulate server side delay with ` <localhost>:<9090>/status/<HTTPCode>?sleep=<Miliseconds> `
 
-## HTTP Status codes
+## Test
+1. Execute test run ` npm test `
+
+
+# HTTP Status codes
 
 ```javascript
 
